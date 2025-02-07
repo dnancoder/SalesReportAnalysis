@@ -42,7 +42,7 @@
 6. **Send HTTP Requests**
    - Open the file `[local git path]\Implinj\ImplinjSalesAnalysis\ImplinjSalesAnalysis.http` in VS Code.
    - You can now send requests by clicking the appropriate buttons.
-   - Refer to the image file `[local git path]\Implinj\ImplinjSalesAnalysis\Documentation\HttpRequest-Execute-Guide.jpg` to see where to click to initiate Scan and Query requests.
+   - Refer to the image file to see where to click to initiate Scan and Query requests.`![\[local git path\]\Implinj\ImplinjSalesAnalysis\Documentation\HttpRequest-Execute-Guide.jpg](https://github.com/dnancoder/SalesReportAnalysis/blob/main/Documentation/HttpRequestGUide.jpg)
    - The results will be displayed in the right pane of VS Code.
 
 
@@ -72,7 +72,7 @@ The Web API supports the following operations:
 
 1. **Clone the Repository**:
    ```sh
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/dnancoder/SalesReportAnalysis)
 
 
 
