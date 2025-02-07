@@ -1,0 +1,20 @@
+@ImplinjSalesAnalysis_HostAddress = http://localhost:5064
+
+GET {{ImplinjSalesAnalysis_HostAddress}}/api/SalesRecordAnalysis/GetSummary?fileName=SalesRecords.csv
+Accept: application/json
+
+###
+
+POST {{ImplinjSalesAnalysis_HostAddress}}/api/SalesRecordAnalysis/PostSummary
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="SalesRecords.csv"
+Content-Type: text/plain
+
+Region,Country,Item Type,Sales Channel,Order Priority,Order Date,Order ID,Ship Date,Units Sold,Unit Price,Unit Cost,Total Revenue,Total Cost,Total Profit
+Middle East and North Africa,Azerbaijan,Snacks,Online,C,10/8/2014,535113847,10/23/2014,934,152.58,97.44,142509.72,91008.96,51500.76
+Central America and the Caribbean,Panama,Cosmetics,Offline,L,2/22/2015,874708545,2/27/2015,4551,437.20,263.33,1989697.20,1198414.83,791282.37
+Central America and the Caribbean,Antigua and Barbuda ,Baby Food,Offline,M,11/30/2012,652215230,1/6/2013,3835,255.28,159.42,978998.80,611375.70,367623.10
+--boundary--
+###
